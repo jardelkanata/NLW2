@@ -67,9 +67,12 @@
 
 /* MEDIA QUERIES */
 
-@media (max-width: 699px) {
+@media (max-width: 1099px) {
     :root {
         font-size: 40% /* modificar as medidas rem */
+    }
+    .hero-image {
+        height: 45rem;
     }
 }
 

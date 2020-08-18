@@ -55,7 +55,9 @@
             </div>
         </header>
         <main>
-            >
+            {%if proffys == "" %}
+                <p class="no-results">Nenhum professor encontrado com a sua pesquisa.</p>
+            {% else %}
             <!-- Função nunjucks para inserir e repetir os cadastros de professores -->
             {%for proffy in proffys%}
             <article class="teacher-item">
@@ -79,6 +81,8 @@
                 </footer>
             </article>
             {%endfor%}
+
+            {% endif %}
 
 
         </main>
